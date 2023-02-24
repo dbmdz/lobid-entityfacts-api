@@ -1,0 +1,62 @@
+{
+  "relatedDdcWithDegreeOfDeterminacy2": [{
+      "id": "http://dewey.info/class/943.041/",
+      "label": "http://dewey.info/class/943.041/"
+    }],
+  "relatedDdcWithDegreeOfDeterminacy3": [{
+      "id": "http://dewey.info/class/940.24/",
+      "label": "http://dewey.info/class/940.24/"
+    }],
+  "type": ["HistoricSingleEventOrEra", "SubjectHeading", "AuthorityResource"],
+  "@context": "http://lobid.org/gnd/context.jsonld",
+  "relatedPlaceOrGeographicName": [{
+      "id": "https://d-nb.info/gnd/4011882-4",
+      "label": "Deutschland"
+    }],
+  "dateOfTermination": ["1648"],
+  "gndSubjectCategory": [{
+      "id": "https://d-nb.info/standards/vocab/gnd/gnd-sc#16.5",
+      "label": "Geschichte einzelner Länder und Völker"
+    }, {
+      "id": "https://d-nb.info/standards/vocab/gnd/gnd-sc#8.4",
+      "label": "Militär"
+    }],
+  "oldAuthorityNumber": ["(DE-588c)4012985-8"],
+  "geographicAreaCode": [{
+      "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA",
+      "label": "Europa"
+    }, {
+      "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE",
+      "label": "Deutschland"
+    }],
+  "dateOfEstablishment": ["1618"],
+  "describedBy": {
+    "id": "https://d-nb.info/gnd/4012985-8/about",
+    "license": {
+      "id": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "label": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "dateModified": "2023-02-17T14:42:30.000",
+    "descriptionLevel": {
+      "id": "https://d-nb.info/standards/vocab/gnd/description-level#1",
+      "label": "Allgemeines, Interdisziplinäre Allgemeinwörter"
+    }
+  },
+  "broaderTermInstantial": [{
+      "id": "https://d-nb.info/gnd/4033114-3",
+      "label": "Krieg"
+    }],
+  "gndIdentifier": "4012985-8",
+  "id": "https://d-nb.info/gnd/4012985-8",
+  "preferredName": "Dreißigjähriger Krieg",
+  "sameAs": [{
+      "id": "http://www.wikidata.org/entity/Q2487",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q2013",
+        "abbr": "WIKIDATA",
+        "publisher": "Wikimedia Foundation Inc.",
+        "icon": "https://www.wikidata.org/static/favicon/wikidata.ico",
+        "name": "Wikidata"
+      }
+    }]
+}

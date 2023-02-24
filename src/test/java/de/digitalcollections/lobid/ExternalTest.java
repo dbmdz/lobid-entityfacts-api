@@ -6,6 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
 import de.digitalcollections.lobid.jackson.LobidObjectMapper;
 import de.digitalcollections.lobid.model.LobidCorporateBody;
+import de.digitalcollections.lobid.model.LobidEvent;
+import de.digitalcollections.lobid.model.LobidGeoLocation;
+import de.digitalcollections.lobid.model.LobidPerson;
 import java.io.IOException;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -49,5 +52,52 @@ public class ExternalTest {
         .isEqualTo("https://www.bsb-muenchen.de");
 
     assertThat(corporateBody.getPreferredName()).isEqualTo("Bayerische Staatsbibliothek");
+  }
+
+  @Test
+  public void testLobidGeoLocation() throws IOException {
+    LobidGeoLocation geoLocation =
+        readFromResources("lobid-GeoLocation-Straubing-4057970-0.json", LobidGeoLocation.class);
+    // Depiction
+    assertThat(geoLocation.getDepiction().get(0).getId())
+        .isEqualTo(
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Straubinger%20Stadtbild.jpg");
+    assertThat(geoLocation.getDepiction().get(0).getThumbnail())
+        .isEqualTo(
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Straubinger%20Stadtbild.jpg?width=270");
+    assertThat(geoLocation.getDepiction().get(0).getUrl())
+        .isEqualTo(
+            "https://commons.wikimedia.org/wiki/File:Straubinger%20Stadtbild.jpg?uselang=de");
+
+    assertThat(geoLocation.getGndIdentifier()).isEqualTo("4057970-0");
+
+    // Homepage
+    assertThat(geoLocation.getHomepage().get(0).getId()).isEqualTo("http://www.straubing.de");
+    assertThat(geoLocation.getHomepage().get(0).getLabel()).isEqualTo("http://www.straubing.de");
+
+    assertThat(geoLocation.getPreferredName()).isEqualTo("Straubing");
+  }
+
+  @Test
+  public void testLobidEvent() throws IOException {
+    LobidEvent event =
+        readFromResources("lobid-Event-30jaehrigerKrieg-4012985-8.json", LobidEvent.class);
+    assertThat(event.getGndIdentifier()).isEqualTo("4012985-8");
+    assertThat(event.getPreferredName()).isEqualTo("Dreißigjähriger Krieg");
+  }
+
+  @Test
+  public void testLobidPerson() throws IOException {
+    LobidPerson person = readFromResources("lobid-Person-Goethe-118540238.json", LobidPerson.class);
+    assertThat(person.getGndIdentifier()).isEqualTo("118540238");
+    assertThat(person.getPreferredName()).isEqualTo("Goethe, Johann Wolfgang von");
+  }
+
+  @Test
+  public void testLobidSubject() throws IOException {
+    LobidEvent subject =
+        readFromResources("lobid-Subject-Handschrift-4023287-6.json", LobidEvent.class);
+    assertThat(subject.getGndIdentifier()).isEqualTo("4023287-6");
+    assertThat(subject.getPreferredName()).isEqualTo("Handschrift");
   }
 }

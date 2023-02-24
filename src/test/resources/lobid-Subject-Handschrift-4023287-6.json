@@ -1,0 +1,58 @@
+{
+  "relatedTerm": [{
+      "id": "https://d-nb.info/gnd/4126273-6",
+      "label": "Manuskript"
+    }, {
+      "id": "https://d-nb.info/gnd/4003942-0",
+      "label": "Autograf"
+    }],
+  "broaderTermGeneric": [{
+      "id": "https://d-nb.info/gnd/4334756-3",
+      "label": "Schriftdenkmal"
+    }],
+  "relatedDdcWithDegreeOfDeterminacy2": [{
+      "id": "http://dewey.info/class/025.1712/",
+      "label": "http://dewey.info/class/025.1712/"
+    }, {
+      "id": "http://dewey.info/class/011.31/",
+      "label": "http://dewey.info/class/011.31/"
+    }],
+  "relatedDdcWithDegreeOfDeterminacy3": [{
+      "id": "http://dewey.info/class/091/",
+      "label": "http://dewey.info/class/091/"
+    }],
+  "type": ["AuthorityResource", "SubjectHeadingSensoStricto", "SubjectHeading"],
+  "@context": "http://lobid.org/gnd/context.jsonld",
+  "gndSubjectCategory": [{
+      "id": "https://d-nb.info/standards/vocab/gnd/gnd-sc#2.1",
+      "label": "Schrift, Handschriftenkunde"
+    }],
+  "oldAuthorityNumber": ["(DE-588c)4023287-6"],
+  "describedBy": {
+    "id": "https://d-nb.info/gnd/4023287-6/about",
+    "license": {
+      "id": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "label": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "dateModified": "2022-04-15T15:15:00.000",
+    "descriptionLevel": {
+      "id": "https://d-nb.info/standards/vocab/gnd/description-level#z",
+      "label": "https://d-nb.info/standards/vocab/gnd/description-level#z"
+    }
+  },
+  "definition": ["Das handgeschriebene Buch, besonders das des Mittelalters in Form eines Kodex (RDA AH-007)."],
+  "gndIdentifier": "4023287-6",
+  "id": "https://d-nb.info/gnd/4023287-6",
+  "preferredName": "Handschrift",
+  "variantName": ["Buchhandschrift", "Handschriften"],
+  "sameAs": [{
+      "id": "http://www.wikidata.org/entity/Q15123051",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q2013",
+        "abbr": "WIKIDATA",
+        "publisher": "Wikimedia Foundation Inc.",
+        "icon": "https://www.wikidata.org/static/favicon/wikidata.ico",
+        "name": "Wikidata"
+      }
+    }]
+}

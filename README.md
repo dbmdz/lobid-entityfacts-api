@@ -4,13 +4,15 @@ Java-Library for mapping JSON-LD of https://lobid.org/gnd Web-API to Java object
 
 Supported entities:
 
-* CorporateBody (partially)
+* CorporateBody (partially) (type = "CorporateBody")
+* Event (partially) (type = "HistoricSingleEventOrEra")
+* GeoLocation (partially) (type = "TerritorialCorporateBodyOrAdministrativeUnit" / "PlaceOrGeographicName")
+* Person (partially) (type = "DifferentiatedPerson" / "Person")
+* Subject (partially) (type = "SubjectHeading" / "SubjectHeadingSensoStricto")
 
 ## Usage
 
-Read data for CorporateBody from URL:
-
-Example:
+Example: Read data for CorporateBody from URL:
 
 ```java
 import com.fasterxml.jackson.databind.ObjectMapper;
