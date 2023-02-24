@@ -51,16 +51,6 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.14.1</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com.fasterxml.jackson.datatype</groupId>-->
-<!--      <artifactId>jackson-datatype-jsr310</artifactId>-->
-<!--      <version>2.14.1</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>com.fasterxml.jackson.module</groupId>-->
-<!--      <artifactId>jackson-module-parameter-names</artifactId>-->
-<!--      <version>2.14.1</version>-->
-<!--    </dependency>-->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -106,26 +96,26 @@
     </plugins>
   </build>
   
-<!--  <distributionManagement>-->
-<!--    <snapshotRepository>-->
-<!--      <id>ossrh-snapshots</id>-->
-<!--      <name>Sonatype Nexus Snapshots</name>-->
-<!--      <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
-<!--    </snapshotRepository>-->
-<!--  </distributionManagement>-->
-<!--  <repositories>-->
-<!--    <repository>-->
-<!--      <id>ossrh-snapshots</id>-->
-<!--      <name>Sonatype Nexus Snapshots</name>-->
-<!--      <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
-<!--      <snapshots>-->
-<!--        <enabled>true</enabled>-->
-<!--      </snapshots>-->
-<!--      <releases>-->
-<!--        <enabled>false</enabled>-->
-<!--      </releases>-->
-<!--    </repository>-->
-<!--  </repositories>-->
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <repositories>
+    <repository>
+      <id>ossrh-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
   
   <profiles>
     <profile>
