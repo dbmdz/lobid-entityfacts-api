@@ -1,0 +1,264 @@
+{
+  "type": [
+    "CorporateBody",
+    "AuthorityResource"
+  ],
+  "@context": "http://lobid.org/gnd/context.jsonld",
+  "gndSubjectCategory": [
+    {
+      "id": "https://d-nb.info/standards/vocab/gnd/gnd-sc#6.7",
+      "label": "Bibliothek, Information und Dokumentation"
+    }
+  ],
+  "oldAuthorityNumber": [
+    "(DE-588)1085893308",
+    "(DE-101c)320695646",
+    "(DE-588c)4075037-1",
+    "(DE-588b)2031351-2",
+    "(DE-588)1086249518",
+    "(DE-588)4075037-1",
+    "(DE-588b)16291378-3",
+    "(DE-588)16291378-3",
+    "(DE-588b)10342579-2",
+    "(DE-588)1085223698",
+    "(DE-588)1090434197"
+  ],
+  "geographicAreaCode": [
+    {
+      "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BY",
+      "label": "Bayern"
+    }
+  ],
+  "deprecatedUri": [
+    "https://d-nb.info/gnd/1086249518",
+    "https://d-nb.info/gnd/4075037-1",
+    "https://d-nb.info/gnd/1085223698",
+    "https://d-nb.info/gnd/1085893308",
+    "https://d-nb.info/gnd/16291378-3",
+    "https://d-nb.info/gnd/1090434197"
+  ],
+  "placeOfBusiness": [
+    {
+      "id": "https://d-nb.info/gnd/4127793-4",
+      "label": "München"
+    }
+  ],
+  "biographicalOrHistoricalInformation": [
+    "1919 Umbenennung"
+  ],
+  "precedingCorporateBody": [
+    {
+      "id": "https://d-nb.info/gnd/2015908-0",
+      "label": "Königliche Hof- und Staatsbibliothek zu München"
+    }
+  ],
+  "dateOfEstablishment": [
+    "1919"
+  ],
+  "describedBy": {
+    "id": "https://d-nb.info/gnd/2031351-2/about",
+    "license": {
+      "id": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "label": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "dateModified": "2022-02-24T14:43:39.000",
+    "descriptionLevel": {
+      "id": "https://d-nb.info/standards/vocab/gnd/description-level#1",
+      "label": "Allgemeines, Interdisziplinäre Allgemeinwörter"
+    }
+  },
+  "broaderTermInstantial": [
+    {
+      "id": "https://d-nb.info/gnd/4066573-2",
+      "label": "Wissenschaftliche Bibliothek"
+    }
+  ],
+  "gndIdentifier": "2031351-2",
+  "id": "https://d-nb.info/gnd/2031351-2",
+  "preferredName": "Bayerische Staatsbibliothek",
+  "wikipedia": [
+    {
+      "id": "https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek",
+      "label": "https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek"
+    }
+  ],
+  "spatialAreaOfActivity": [
+    {
+      "id": "https://d-nb.info/gnd/4005044-0",
+      "label": "Bayern"
+    }
+  ],
+  "variantName": [
+    "Bayerische Staatsbibliothek München",
+    "Biblioteca del Estáu de Baviera",
+    "Bavarian State Library",
+    "State Library Munich",
+    "Bayerische Staatsbibliothek zu München",
+    "Bibliotheca Monacensis"
+  ],
+  "abbreviatedNameForTheCorporateBody": [
+    "BSBM",
+    "BSB"
+  ],
+  "homepage": [
+    {
+      "id": "https://www.bsb-muenchen.de",
+      "label": "https://www.bsb-muenchen.de"
+    }
+  ],
+  "sameAs": [
+    {
+      "id": "http://id.loc.gov/rwo/agents/n50064518",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q13219454",
+        "abbr": "LC",
+        "publisher": "Library of Congress",
+        "icon": "http://www.loc.gov/favicon.ico",
+        "name": "NACO Authority File"
+      }
+    },
+    {
+      "id": "http://isni.org/isni/000000012097381X",
+      "collection": {
+        "id": "http://isni.org"
+      }
+    },
+    {
+      "id": "http://viaf.org/viaf/129557156",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q54919",
+        "abbr": "VIAF",
+        "publisher": "OCLC",
+        "icon": "http://viaf.org/viaf/images/viaf.ico",
+        "name": "Virtual International Authority File (VIAF)"
+      }
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q256507",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q2013",
+        "abbr": "WIKIDATA",
+        "publisher": "Wikimedia Foundation Inc.",
+        "icon": "https://www.wikidata.org/static/favicon/wikidata.ico",
+        "name": "Wikidata"
+      }
+    },
+    {
+      "id": "https://d-nb.info/gnd/1085223698",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "id": "https://d-nb.info/gnd/1085893308",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "id": "https://d-nb.info/gnd/1086249518",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "id": "https://d-nb.info/gnd/1090434197",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "id": "https://d-nb.info/gnd/16291378-3",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "collection": {
+        "abbr": "DNB",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "https://www.dnb.de/SiteGlobals/Frontend/DNBWeb/Images/favicon.png?__blob=normal&v=4",
+        "id": "http://www.wikidata.org/entity/Q36578"
+      },
+      "id": "https://d-nb.info/gnd/2031351-2/about"
+    },
+    {
+      "id": "https://d-nb.info/gnd/4075037-1",
+      "collection": {
+        "id": "http://www.wikidata.org/entity/Q36578",
+        "abbr": "DNB",
+        "publisher": "Deutsche Nationalbibliothek",
+        "icon": "http://www.dnb.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=normal&v=1",
+        "name": "Gemeinsame Normdatei (GND) im Katalog der Deutschen Nationalbibliothek"
+      }
+    },
+    {
+      "collection": {
+        "abbr": "dewiki",
+        "name": "Wikipedia (Deutsch)",
+        "publisher": "Wikimedia Foundation Inc.",
+        "icon": "https://de.wikipedia.org/static/favicon/wikipedia.ico",
+        "id": "http://www.wikidata.org/entity/Q48183"
+      },
+      "id": "https://de.wikipedia.org/wiki/Bayerische_Staatsbibliothek"
+    },
+    {
+      "collection": {
+        "abbr": "enwiki",
+        "name": "Wikipedia (English)",
+        "publisher": "Wikimedia Foundation Inc.",
+        "icon": "https://en.wikipedia.org/static/favicon/wikipedia.ico",
+        "id": "http://www.wikidata.org/entity/Q328"
+      },
+      "id": "https://en.wikipedia.org/wiki/Bavarian_State_Library"
+    },
+    {
+      "collection": {
+        "abbr": "DE-611",
+        "name": "Kalliope Verbundkatalog",
+        "publisher": "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz",
+        "icon": "https://kalliope-verbund.info/img/favicon.ico",
+        "id": "https://kalliope-verbund.info"
+      },
+      "id": "https://kalliope-verbund.info/gnd/2031351-2"
+    },
+    {
+      "collection": {
+        "abbr": "DDB",
+        "name": "Deutsche Digitale Bibliothek",
+        "publisher": "Deutsche Digitale Bibliothek",
+        "icon": "https://www.deutsche-digitale-bibliothek.de/favicon.ico",
+        "id": "http://www.wikidata.org/entity/Q621630"
+      },
+      "id": "https://www.deutsche-digitale-bibliothek.de/organization/gnd/2031351-2"
+    }
+  ],
+  "depiction": [
+    {
+      "id": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayerische%20Staatsbibliothek%20logo.svg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bayerische%20Staatsbibliothek%20logo.svg?uselang=de",
+      "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayerische%20Staatsbibliothek%20logo.svg?width=270"
+    }
+  ]
+}
