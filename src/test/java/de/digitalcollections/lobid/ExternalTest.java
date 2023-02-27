@@ -52,6 +52,9 @@ public class ExternalTest {
         .isEqualTo("https://www.bsb-muenchen.de");
 
     assertThat(corporateBody.getPreferredName()).isEqualTo("Bayerische Staatsbibliothek");
+
+    assertThat(corporateBody.getType())
+        .containsExactlyInAnyOrder("CorporateBody", "AuthorityResource");
   }
 
   @Test
@@ -76,6 +79,12 @@ public class ExternalTest {
     assertThat(geoLocation.getHomepage().get(0).getLabel()).isEqualTo("http://www.straubing.de");
 
     assertThat(geoLocation.getPreferredName()).isEqualTo("Straubing");
+
+    assertThat(geoLocation.getType())
+        .containsExactlyInAnyOrder(
+            "TerritorialCorporateBodyOrAdministrativeUnit",
+            "PlaceOrGeographicName",
+            "AuthorityResource");
   }
 
   @Test
@@ -84,6 +93,10 @@ public class ExternalTest {
         readFromResources("lobid-Event-30jaehrigerKrieg-4012985-8.json", LobidEvent.class);
     assertThat(event.getGndIdentifier()).isEqualTo("4012985-8");
     assertThat(event.getPreferredName()).isEqualTo("Dreißigjähriger Krieg");
+
+    assertThat(event.getType())
+        .containsExactlyInAnyOrder(
+            "HistoricSingleEventOrEra", "SubjectHeading", "AuthorityResource");
   }
 
   @Test
@@ -91,6 +104,9 @@ public class ExternalTest {
     LobidPerson person = readFromResources("lobid-Person-Goethe-118540238.json", LobidPerson.class);
     assertThat(person.getGndIdentifier()).isEqualTo("118540238");
     assertThat(person.getPreferredName()).isEqualTo("Goethe, Johann Wolfgang von");
+
+    assertThat(person.getType())
+        .containsExactlyInAnyOrder("AuthorityResource", "DifferentiatedPerson", "Person");
   }
 
   @Test
@@ -99,5 +115,9 @@ public class ExternalTest {
         readFromResources("lobid-Subject-Handschrift-4023287-6.json", LobidEvent.class);
     assertThat(subject.getGndIdentifier()).isEqualTo("4023287-6");
     assertThat(subject.getPreferredName()).isEqualTo("Handschrift");
+
+    assertThat(subject.getType())
+        .containsExactlyInAnyOrder(
+            "AuthorityResource", "SubjectHeadingSensoStricto", "SubjectHeading");
   }
 }
