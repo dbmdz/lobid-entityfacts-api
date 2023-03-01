@@ -9,6 +9,8 @@ import de.digitalcollections.lobid.model.LobidCorporateBody;
 import de.digitalcollections.lobid.model.LobidEvent;
 import de.digitalcollections.lobid.model.LobidGeoLocation;
 import de.digitalcollections.lobid.model.LobidPerson;
+import de.digitalcollections.lobid.model.LobidSubject;
+import de.digitalcollections.lobid.model.LobidWork;
 import java.io.IOException;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -58,6 +60,18 @@ public class ExternalTest {
   }
 
   @Test
+  public void testLobidEvent() throws IOException {
+    LobidEvent event =
+        readFromResources("lobid-Event-30jaehrigerKrieg-4012985-8.json", LobidEvent.class);
+    assertThat(event.getGndIdentifier()).isEqualTo("4012985-8");
+    assertThat(event.getPreferredName()).isEqualTo("Dreißigjähriger Krieg");
+
+    assertThat(event.getType())
+        .containsExactlyInAnyOrder(
+            "HistoricSingleEventOrEra", "SubjectHeading", "AuthorityResource");
+  }
+
+  @Test
   public void testLobidGeoLocation() throws IOException {
     LobidGeoLocation geoLocation =
         readFromResources("lobid-GeoLocation-Straubing-4057970-0.json", LobidGeoLocation.class);
@@ -88,18 +102,6 @@ public class ExternalTest {
   }
 
   @Test
-  public void testLobidEvent() throws IOException {
-    LobidEvent event =
-        readFromResources("lobid-Event-30jaehrigerKrieg-4012985-8.json", LobidEvent.class);
-    assertThat(event.getGndIdentifier()).isEqualTo("4012985-8");
-    assertThat(event.getPreferredName()).isEqualTo("Dreißigjähriger Krieg");
-
-    assertThat(event.getType())
-        .containsExactlyInAnyOrder(
-            "HistoricSingleEventOrEra", "SubjectHeading", "AuthorityResource");
-  }
-
-  @Test
   public void testLobidPerson() throws IOException {
     LobidPerson person = readFromResources("lobid-Person-Goethe-118540238.json", LobidPerson.class);
     assertThat(person.getGndIdentifier()).isEqualTo("118540238");
@@ -111,13 +113,22 @@ public class ExternalTest {
 
   @Test
   public void testLobidSubject() throws IOException {
-    LobidEvent subject =
-        readFromResources("lobid-Subject-Handschrift-4023287-6.json", LobidEvent.class);
+    LobidSubject subject =
+        readFromResources("lobid-Subject-Handschrift-4023287-6.json", LobidSubject.class);
     assertThat(subject.getGndIdentifier()).isEqualTo("4023287-6");
     assertThat(subject.getPreferredName()).isEqualTo("Handschrift");
 
     assertThat(subject.getType())
         .containsExactlyInAnyOrder(
             "AuthorityResource", "SubjectHeadingSensoStricto", "SubjectHeading");
+  }
+
+  @Test
+  public void testLobidWork() throws IOException {
+    LobidWork work = readFromResources("lobid-Work-Faust-4128140-8.json", LobidWork.class);
+    assertThat(work.getGndIdentifier()).isEqualTo("4128140-8");
+    assertThat(work.getPreferredName()).isEqualTo("Faust");
+
+    assertThat(work.getType()).containsExactlyInAnyOrder("AuthorityResource", "Work");
   }
 }
