@@ -9,6 +9,7 @@ Supported entities:
 * GeoLocation (partially) (type = "TerritorialCorporateBodyOrAdministrativeUnit" / "PlaceOrGeographicName")
 * Person (partially) (type = "DifferentiatedPerson" / "Person")
 * Subject (partially) (type = "SubjectHeading" / "SubjectHeadingSensoStricto")
+* Work (partially) (type = "Work")
 
 ## Usage
 
@@ -21,4 +22,6 @@ import de.digitalcollections.lobid.model.LobidCorporateBody;
 
 ObjectMapper mapper = new LobidObjectMapper();
 LobidCorporateBody lobidCorporateBody = mapper.readValue(new URL("https://lobid.org/gnd/2031351-2.json"), LobidCorporateBody.class);
+
+String preferredName = lobidCorporateBody.getPreferredName();
 ```
