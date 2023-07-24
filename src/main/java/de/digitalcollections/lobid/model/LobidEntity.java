@@ -1,6 +1,6 @@
 package de.digitalcollections.lobid.model;
 
-class LobidEntity {
+public class LobidEntity {
 
   protected String gndIdentifier;
 
