@@ -6,6 +6,7 @@ import java.util.List;
 public class LobidGeoLocation extends LobidEntity {
 
   private List<LobidDepiction> depiction;
+  private List<LobidGeometry> geometry;
   private List<LobidHomepage> homepage;
 
   public List<LobidDepiction> getDepiction() {
@@ -16,11 +17,19 @@ public class LobidGeoLocation extends LobidEntity {
     this.depiction = depiction;
   }
 
+  public List<LobidGeometry> getHasGeometry() {
+    return geometry;
+  }
+
   public List<LobidHomepage> getHomepage() {
     return homepage;
   }
 
   public void setHomepage(List<LobidHomepage> homepage) {
     this.homepage = homepage;
+  }
+
+  public void setHasGeometry(List<LobidGeometry> geometry) {
+    this.geometry = geometry;
   }
 }
