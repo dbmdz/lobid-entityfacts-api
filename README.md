@@ -1,5 +1,10 @@
 # lobid.org Entityfacts API
 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/dbmdz/lobid-entityfacts-api/.github%2Fworkflows%2Fci.yml)](https://github.com/dbmdz/lobid-entityfacts-api/actions?query=branch%3Amain)
+[![License](https://img.shields.io/github/license/dbmdz/lobid-entityfacts-api.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/dbmdz/lobid-entityfacts-api.svg)](https://github.com/dbmdz/streaming-server-euphoria/releases)
+[![Maven Central Version](https://img.shields.io/maven-central/v/dev.mdz/lobid-entityfacts-api)](https://central.sonatype.com/search?q=a:lobid-entityfacts-api
+
 Java-Library for mapping JSON-LD of https://lobid.org/gnd Web-API to Java objects
 
 Supported entities:
@@ -17,8 +22,8 @@ Example: Read data for CorporateBody from URL:
 
 ```java
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.digitalcollections.lobid.jackson.LobidObjectMapper;
-import de.digitalcollections.lobid.model.LobidCorporateBody;
+import dev.mdz.lobid.jackson.LobidObjectMapper;
+import dev.mdz.lobid.model.LobidCorporateBody;
 
 ObjectMapper mapper = new LobidObjectMapper();
 LobidCorporateBody lobidCorporateBody = mapper.readValue(new URL("https://lobid.org/gnd/2031351-2.json"), LobidCorporateBody.class);

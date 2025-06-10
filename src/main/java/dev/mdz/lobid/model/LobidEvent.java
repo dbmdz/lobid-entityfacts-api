@@ -1,4 +1,4 @@
-package de.digitalcollections.lobid.model;
+package dev.mdz.lobid.model;
 
 /** type = "HistoricSingleEventOrEra" */
 public class LobidEvent extends LobidEntity {}

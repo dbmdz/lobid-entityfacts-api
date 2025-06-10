@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- **Breaking** Changed `groupId` and renamed packages
+
 ## [1.1.0](https://github.com/dbmdz/lobid-entityfacts-api/releases/tag/1.1.0) - 2023-07-26
 
 ### Added

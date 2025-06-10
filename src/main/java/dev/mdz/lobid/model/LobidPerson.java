@@ -1,4 +1,4 @@
-package de.digitalcollections.lobid.model;
+package dev.mdz.lobid.model;
 
 import java.util.List;
 
