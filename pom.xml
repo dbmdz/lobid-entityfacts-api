@@ -142,7 +142,6 @@
     </plugins>
   </build>
   
-
   <repositories>
     <repository>
       <id>ossrh-snapshots</id>
