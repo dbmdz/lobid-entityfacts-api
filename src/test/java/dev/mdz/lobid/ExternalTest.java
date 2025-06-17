@@ -1,16 +1,16 @@
-package de.digitalcollections.lobid;
+package dev.mdz.lobid;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
-import de.digitalcollections.lobid.jackson.LobidObjectMapper;
-import de.digitalcollections.lobid.model.LobidCorporateBody;
-import de.digitalcollections.lobid.model.LobidEvent;
-import de.digitalcollections.lobid.model.LobidGeoLocation;
-import de.digitalcollections.lobid.model.LobidPerson;
-import de.digitalcollections.lobid.model.LobidSubject;
-import de.digitalcollections.lobid.model.LobidWork;
+import dev.mdz.lobid.jackson.LobidObjectMapper;
+import dev.mdz.lobid.model.LobidCorporateBody;
+import dev.mdz.lobid.model.LobidEvent;
+import dev.mdz.lobid.model.LobidGeoLocation;
+import dev.mdz.lobid.model.LobidPerson;
+import dev.mdz.lobid.model.LobidSubject;
+import dev.mdz.lobid.model.LobidWork;
 import java.io.IOException;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
