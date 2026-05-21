@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/dbmdz/lobid-entityfacts-api/.github%2Fworkflows%2Fci.yml)](https://github.com/dbmdz/lobid-entityfacts-api/actions?query=branch%3Amain)
 [![License](https://img.shields.io/github/license/dbmdz/lobid-entityfacts-api.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/release/dbmdz/lobid-entityfacts-api.svg)](https://github.com/dbmdz/streaming-server-euphoria/releases)
+[![GitHub release](https://img.shields.io/github/release/dbmdz/lobid-entityfacts-api.svg)](https://github.com/dbmdz/lobid-entityfacts-api/releases)
 [![Maven Central Version](https://img.shields.io/maven-central/v/dev.mdz/lobid-entityfacts-api)](https://central.sonatype.com/search?q=a:lobid-entityfacts-api
 
 Java-Library for mapping JSON-LD of https://lobid.org/gnd Web-API to Java objects
