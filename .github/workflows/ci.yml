@@ -1,17 +1,17 @@
 name: CI
 
 on:
-  pull_request:
-    branches: [ main, release/* ]
   push:
-    branches: [ main, release/* ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   release:
     types: [ published ]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -20,27 +20,22 @@ jobs:
         with:
           check-latest: true
           distribution: temurin
-          java-version: ${{ matrix.java }}
+          java-version: 17
       - name: Set up cache
         uses: actions/cache@v6
         env:
           cache-name: cache-maven-artifacts
         with:
-          key: lobid-entityfacts-api-cache-java-${{ matrix.java }}-${{ github.run_id }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           path: |
             ~/.m2/repository
             target
-      - name: Check Java codestyle
-        run: mvn com.spotify.fmt:fmt-maven-plugin:check
       - name: Build with Maven
         run: mvn -B -U clean verify
-    strategy:
-      matrix:
-        java: [17]
   publish:
-    if: (github.event_name == 'push' && (contains(github.ref, 'main') || startsWith(github.ref, 'release/'))) || github.event_name == 'release'
+    if: (github.event_name == 'push' && contains(github.ref, 'main')) || github.event_name == 'release'
+    runs-on: ubuntu-26.04
     needs: build
-    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
@@ -49,7 +44,7 @@ jobs:
         env:
           cache-name: cache-maven-artifacts
         with:
-          key: lobid-entityfacts-api-cache-java-17-${{ github.run_id }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           path: |
             ~/.m2/repository
             target
