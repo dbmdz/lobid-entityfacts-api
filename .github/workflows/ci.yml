@@ -52,7 +52,7 @@ jobs:
           key: lobid-entityfacts-api-cache-java-17-${{ github.run_id }}
           path: |
             ~/.m2/repository
-            **/target
+            target
       - name: Install XML utils
         run: sudo apt update && sudo apt install libxml2-utils
       - name: Extract project version
@@ -99,4 +99,3 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
           MAVEN_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
           MAVEN_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
-
